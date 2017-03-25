@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainLayout"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/supplier_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Supplier Id">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/lot_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Lot Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/garden_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Garden Name"
+                android:inputType="text" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mainLayout"
+                android:layout_gravity="right" />
+
+            <Spinner
+                android:id="@+id/unit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/ratingBar2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/ratingBar2"
+                android:layout_below="@+id/ratingBar2"
+                android:layout_marginTop="17dp"
+                android:background="#90A4AE" />
+
+            <EditText
+                android:id="@+id/purchase_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/welling_price"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="Purchase Price"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/selling_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Selling Price"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/t_amount"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/t_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/submit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="25dp"
+                android:ems="10"
+                android:hint="Total Amount"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:textStyle="bold"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/mainLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Rating"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
